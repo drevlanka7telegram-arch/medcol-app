@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal"
+    android:background="?attr/colorSurfaceVariant">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="?attr/colorOnSurface"
+        android:layout_marginBottom="32dp"
+        android:gravity="center"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_applicants"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:paddingVertical="20dp"
+        android:text="@string/menu_applicants"
+        android:textSize="18sp"
+        app:icon="@android:drawable/ic_menu_agenda"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_students"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:paddingVertical="20dp"
+        android:text="@string/menu_students"
+        android:textSize="18sp"
+        app:icon="@android:drawable/ic_menu_edit"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_news"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:paddingVertical="20dp"
+        android:text="@string/menu_news"
+        android:textSize="18sp"
+        app:icon="@android:drawable/ic_dialog_email"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_contacts"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="16dp"
+        android:text="@string/menu_contacts"
+        android:textSize="16sp"
+        app:icon="@android:drawable/ic_dialog_map"/>
+
+</LinearLayout>

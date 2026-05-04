@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Медколледж ПТЗ</string>
+    <string name="menu_applicants">Абитуриентам</string>
+    <string name="menu_students">Студентам</string>
+    <string name="menu_news">Новости</string>
+    <string name="menu_contacts">Контакты</string>
+    <string name="url_applicants">https://medcol-ptz.ru/abiturientam/</string>
+    <string name="url_students">https://medcol-ptz.ru/studentam/</string>
+    <string name="url_news">https://medcol-ptz.ru/novosti/</string>
+    <string name="url_contacts">https://medcol-ptz.ru/kontakty/</string>
+</resources>
