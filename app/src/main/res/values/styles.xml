@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Стиль приложения в цветах сайта medcol-ptz.ru -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary_blue</item>
+        <item name="colorPrimaryDark">@color/primary_dark_blue</item>
+        <item name="colorAccent">@color/accent_red</item>
+        <item name="android:statusBarColor">@color/primary_blue</item>
+        <item name="android:windowBackground">@color/light_gray</item>
+    </style>
+</resources>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Медколледж ПТЗ - Визуализация</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Roboto', 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            color: #333;
+        }
+        
+        .container {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .phone-container {
+            width: 360px;
+            height: 640px;
+            background: #f5f5f5;
+            border-radius: 30px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+            position: relative;
+            border: 8px solid #333;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .status-bar {
+            height: 24px;
+            background: #1e3c72;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 16px;
+            color: white;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        
+        .app-content {
+            flex: 1;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .app-title {
+            font-size: 22px;
+            font-weight: bold;
+            color: #1e3c72;
+            margin-bottom: 32px;
+            text-align: center;
+        }
+        
+        .button {
+            width: 100%;
+            padding: 20px;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-size: 18px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 16px;
+            padding-left: 24px;
+        }
+        
+        .button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+        }
+        
+        .btn-secondary {
+            background: white;
+            color: #1e3c72;
+            border: 2px solid #1e3c72;
+        }
+        
+        .btn-outline {
+            background: transparent;
+            color: #1e3c72;
+            box-shadow: none;
+            border: 2px solid #1e3c72;
+            font-size: 16px;
+            padding: 16px;
+        }
+        
+        .icon {
+            font-size: 24px;
+        }
+        
+        .description {
+            color: white;
+            max-width: 400px;
+        }
+        
+        .description h2 {
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+        
+        .feature-list {
+            list-style: none;
+            line-height: 1.8;
+            font-size: 16px;
+        }
+        
+        .feature-list li:before {
+            content: "✓ ";
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        
+        .screenshot {
+            margin-top: 20px;
+            background: white;
+            border-radius: 8px;
+            padding: 16px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .screenshot-title {
+            font-size: 14px;
+            color: #757575;
+            margin-bottom: 8px;
+        }
+        
+        .screenshot-content {
+            font-size: 14px;
+            color: #212121;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="phone-container">
+            <div class="status-bar">
+                <span>9:41</span>
+                <span>🔋 100%</span>
+            </div>
+            
+            <div class="app-content">
+                <div class="app-title">Медколледж ПТЗ</div>
+                
+                <button class="button btn-primary">
+                    <span class="icon">📋</span>
+                    Абитуриентам
+                </button>
+                
+                <button class="button btn-primary">
+                    <span class="icon">📚</span>
+                    Студентам
+                </button>
+                
+                <button class="button btn-primary">
+                    <span class="icon">📰</span>
+                    Новости
+                </button>
+                
+                <button class="button btn-outline">
+                    <span class="icon">📞</span>
+                    Контакты
+                </button>
+                
+                <div class="screenshot">
+                    <div class="screenshot-title">Что внутри:</div>
+                    <div class="screenshot-content">
+                        • WebView с сайта<br>
+                        • Расписание<br>
+                        • Правила приема<br>
+                        • Последние новости
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="description">
+            <h2>Приложение "Медколледж ПТЗ"</h2>
+            <ul class="feature-list">
+                <li>Легкое и быстрое (минимум кода)</li>
+                <li>WebView для документов и расписания</li>
+                <li>Разделы: Абитуриентам, Студентам</li>
+                <li>Новости колледжа</li>
+                <li>Контактная информация</li>
+                <li>Современный дизайн Material Design</li>
+                <li>Не перегружено лишними функциями</li>
+            </ul>
+            <p style="margin-top: 20px; line-height: 1.6;">
+                Приложение просто открывает нужные разделы сайта medcol-ptz.ru 
+                в WebView, плюс выводит контакты. Никакой сложной логики — 
+                только удобный доступ к информации.
+            </p>
+            <p style="margin-top: 20px; font-size: 14px; opacity: 0.8;">
+                Код на GitHub:<br>
+                https://github.com/drevlanka7telegram-arch/medcol-app
+            </p>
+        </div>
+    </div>
+</body>
+</html>

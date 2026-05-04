@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Цвета сайта medcol-ptz.ru -->
+    <color name="primary_blue">#1e3a8a</color> <!-- Темно-синий (шапка сайта) -->
+    <color name="primary_dark_blue">#1e40af</color> <!-- Акцентный синий -->
+    <color name="accent_red">#dc2626</color> <!-- Красный (медицинский крест/акценты) -->
+    <color name="white">#ffffff</color>
+    <color name="light_gray">#f3f4f6</color> <!-- Фон страницы -->
+    <color name="text_primary">#111827</color>
+    <color name="text_secondary">#6b7280</color>
+</resources>

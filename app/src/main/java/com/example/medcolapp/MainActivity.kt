@@ -3,7 +3,7 @@ package com.example.medcolapp
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.google.android.material.button.MaterialButton
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -11,27 +11,30 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        findViewById<MaterialButton>(R.id.btn_applicants).setOnClickListener {
-            openWebView(getString(R.string.url_applicants), getString(R.string.menu_applicants))
+        // Плитка "Абитуриентам" - открывает раздел сайта
+        findViewById<androidx.cardview.widget.CardView>(R.id.card_abiturient).setOnClickListener {
+            openWebView("https://medcol-ptz.ru/abiturientam")
         }
 
-        findViewById<MaterialButton>(R.id.btn_students).setOnClickListener {
-            openWebView(getString(R.string.url_students), getString(R.string.menu_students))
+        // Плитка "Студентам"
+        findViewById<androidx.cardview.widget.CardView>(R.id.card_student).setOnClickListener {
+            openWebView("https://medcol-ptz.ru/studentam")
         }
 
-        findViewById<MaterialButton>(R.id.btn_news).setOnClickListener {
-            startActivity(Intent(this, NewsActivity::class.java))
+        // Плитка "Новости"
+        findViewById<androidx.cardview.widget.CardView>(R.id.card_news).setOnClickListener {
+            openWebView("https://medcol-ptz.ru/novosti")
         }
 
-        findViewById<MaterialButton>(R.id.btn_contacts).setOnClickListener {
+        // Кнопка "Контакты"
+        btn_contacts.setOnClickListener {
             startActivity(Intent(this, ContactsActivity::class.java))
         }
     }
 
-    private fun openWebView(url: String, title: String) {
+    private fun openWebView(url: String) {
         val intent = Intent(this, WebViewActivity::class.java)
         intent.putExtra("url", url)
-        intent.putExtra("title", title)
         startActivity(intent)
     }
 }
