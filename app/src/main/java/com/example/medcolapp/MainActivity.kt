@@ -21,6 +21,11 @@ class MainActivity : AppCompatActivity() {
             openWebView("https://medcol-ptz.ru/studentam")
         }
 
+        // Плитка "Расписание"
+        findViewById<androidx.cardview.widget.CardView>(R.id.card_schedule).setOnClickListener {
+            openWebView("https://medcol-ptz.ru/studentam/raspisanie")
+        }
+
         // Плитка "Новости"
         findViewById<androidx.cardview.widget.CardView>(R.id.card_news).setOnClickListener {
             openWebView("https://medcol-ptz.ru/novosti")
