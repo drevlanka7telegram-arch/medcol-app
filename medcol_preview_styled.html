@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Медколледж ПТЗ - Визуализация</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Roboto', Arial, sans-serif; }
+        body { background: #f3f4f6; }
+        .phone { width: 360px; height: 640px; margin: 20px auto; border: 8px solid #333; border-radius: 30px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
+        .header { background: #1e3a8a; color: white; padding: 20px; }
+        .header h1 { font-size: 22px; font-weight: bold; margin-bottom: 5px; }
+        .header p { font-size: 13px; opacity: 0.9; }
+        .content { padding: 16px; height: calc(100% - 100px); overflow-y: auto; }
+        .section-title { color: #1e3a8a; font-weight: bold; margin: 15px 0 10px; font-size: 16px; }
+        .tile { border-radius: 8px; padding: 16px; margin-bottom: 12px; color: white; display: flex; align-items: center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .tile-icon { font-size: 32px; margin-right: 16px; }
+        .tile-content h3 { font-size: 16px; font-weight: bold; margin-bottom: 4px; }
+        .tile-content p { font-size: 13px; opacity: 0.9; }
+        .btn { background: #1e3a8a; color: white; border: none; padding: 16px; width: 100%; border-radius: 8px; font-weight: bold; font-size: 16px; margin-top: 10px; }
+        .info { margin-top: 20px; font-size: 12px; color: #6b7280; text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="phone">
+        <div class="header">
+            <h1>Медколледж ПТЗ</h1>
+            <p>Петрозаводский базовый медицинский колледж</p>
+        </div>
+        <div class="content">
+            <div class="section-title">ДЛЯ ПОСЕТИТЕЛЕЙ</div>
+            
+            <div class="tile" style="background: #1e3a8a;">
+                <div class="tile-icon">🎓</div>
+                <div class="tile-content">
+                    <h3>АБИТУРИЕНТАМ</h3>
+                    <p>Поступление, специальности, документы</p>
+                </div>
+            </div>
+            
+            <div class="tile" style="background: #1e40af;">
+                <div class="tile-icon">📚</div>
+                <div class="tile-content">
+                    <h3>СТУДЕНТАМ</h3>
+                    <p>Расписание, учебные материалы</p>
+                </div>
+            </div>
+            
+            <div class="tile" style="background: #dc2626;">
+                <div class="tile-icon">📰</div>
+                <div class="tile-content">
+                    <h3>НОВОСТИ</h3>
+                    <p>События, объявления, акции</p>
+                </div>
+            </div>
+            
+            <button class="btn">КОНТАКТЫ</button>
+            
+            <div class="info">
+                Стиль приложения соответствует дизайну сайта<br>
+                medcol-ptz.ru<br><br>
+                ✓ Синяя шапка как на сайте<br>
+                ✓ Плитки с иконками<br>
+                ✓ Цветовая гамма медицинского учреждения
+            </div>
+        </div>
+    </div>
+</body>
+</html>
